@@ -1,0 +1,10 @@
+Auto-escaping is not by default. Hello {{ name }}
+
+{% autoescape off %}
+    This will not be auto-escaped: {{ data }}.
+
+    Nor this: {{ other data }}
+    {% autoescape on %}
+        Auto-escaping applies again: {{ name }}
+    {% endautoescape %}
+{% endautoescape %}

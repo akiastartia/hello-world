@@ -1,0 +1,20 @@
+<html>
+    <head><title>Time Capsule</title></head>
+    <body>
+        <h1>Time Capsule</h1>
+    {% if date.month == 1 and date.day == 20 %}
+        <p>My dear friend:</p>
+        <h2>Happy Birthday!</h2>
+    {% endif %}
+    <p>
+        This is a time capsule from <strong>{{ date }}</strong>.
+    </p>
+    {% if date_dif > 0 %}
+        <p>It drifts across {{ days }} day{{ days|pluralize }} from the past to your time.</p>
+    {% elif date_dif < 0 %}
+        <p>It drifts across {{ days }} day{{ days|pluralize }} from the future to your time.</p>
+    {% else %}
+        <p>Today is always the best day for you!</p>
+    {% endif %}
+    </body>
+</html>

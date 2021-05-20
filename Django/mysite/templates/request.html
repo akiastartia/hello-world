@@ -1,0 +1,11 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+    <head>test_page</head>
+    <p>Your browser is {{ agent }}.</p>
+    <p>IP Address: {{ ip }}</p>
+    <table>
+        {% for k,v in meta %}
+            <tr><td>{{k}}</td><td>{{v}}</td></tr>
+        {% endfor %}
+    </table>
+</html>

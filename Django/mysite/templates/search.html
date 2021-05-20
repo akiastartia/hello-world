@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Search Books</title>
+    </head>
+    <body>
+        {% if errors %}
+        <ul>
+            {% for error in errors %}
+            <li>Error: {{ error }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        <form action="" method="get">
+            <input type="text" name="book_name">
+            <input type="submit" values="Search">
+        </form>
+    </body>
+</html>
