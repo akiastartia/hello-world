@@ -7,7 +7,6 @@ This is the repository for Personal Data Science Practices.
 A prediction project from Google Certificate for Advanced Data Analyst.
 
 Models covered:
-* Decision Tree
 * Random Forest
 * XGBoost
 
